@@ -43,7 +43,6 @@ body {
     font-weight: 500;
 }
 
-
 nav {
     position: sticky;
     top: 0; 
@@ -566,11 +565,16 @@ padding: 0;
 }
 
 .fifth-vp-container {
-    width: 100%;
+    width: 80%;
 }
-.fifth-vp-title, .fifth-vp-description {
+ .fifth-vp-description {
     font-size: 12px;
-    max-width: 50%;
+    max-width: 85%;
+ }
+
+.fifth-vp-title {
+font-size: 20px;
 }
+
 }
 
