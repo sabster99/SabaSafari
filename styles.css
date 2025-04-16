@@ -551,6 +551,9 @@ justify-content: space-between;
 
 .seven-vp-container {
 margin: 50px 0 100px 0;
+background-color: #fff;
+border-radius: 120px;
+padding-bottom: 30px;
 }
 
 .seven-vp-title {
@@ -569,14 +572,13 @@ display: flex;
 justify-content: center;
 text-align: center;
 gap: 100px;
+border-radius: 130px;
 }
 
 .percent-and-texts {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .percent-description {
 max-width: 200px;
@@ -586,18 +588,31 @@ max-width: 200px;
 font-size: 40px;
 }
 
+/* -------------- bgc change  -------------- */
+
+.bgc-change-container {
+position: relative;
+}
+
+.bgc-change {
+background-color:  rgb(63, 83, 44);
+width: calc(100vw);
+height: 300px;
+position: absolute;
+bottom: 0;
+z-index: -20;
+}
+
 /* -------------- Eighth Viewport -------------- */
 
 .Eighth-vp-container {
     background-color:  rgb(63, 83, 44);
     color: white;
-    max-width: 1692px;
 }
 
 .Eighth-vp-title {
     font-size: 40px;
     font-weight: 400;
-    padding-top: 150px;
     text-align: center;
     margin: auto;
 }
@@ -613,7 +628,7 @@ font-size: 40px;
 .Eighth-vp-links {
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
     justify-content: center;
     gap: 20px;
 }
@@ -645,34 +660,39 @@ font-size: 40px;
     
 }
 
-.as {
+.footer-column-lists {
     list-style: none;
     padding: 0;
     line-height: 2;
 }
 
-h3 {
+.footer h3 {
     font-size: large;
 }
 
-.language::after {
+/* -------------- Footer end  -------------- */
+
+
+.footer-end-language-section::after {
     content: "English";
     display: contents;
     color: white;
     font-size: 13px;
 }
 
-.globe {
+.footer-end-globe-icon {
     width: 16px;
+    align-items: center;
 }
 
-.language {
+.footer-end-language-section {
     display: flex;
     align-items: center;
     gap: 5px;
+    align-content: center;
 }
 
-.akhar {
+.footer-end {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -683,13 +703,13 @@ h3 {
     color: white;
 }
 
-.footer-links a {
+.footer-end-links a {
     color: white;
     padding: 0 20 0 20;
     font-size: 13px;
 }
 
-.akhar p {
+.footer-end p {
     font-size: 13px;
 }
 
