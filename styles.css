@@ -204,81 +204,6 @@ position: relative;
     border-radius: 2px;
   }
   
-
-  /* -------------- Mobile Adjustments -------------- */
-
-
-  @media (max-width: 768px) {
-    .menu {
-        align-items: center;
-        padding: 5px;
-    }
-  
-    .menu-left {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .menu-left img {
-        width: 100%;
-      }
-  
-    .hamburger {
-      display: flex;
-    }
-  
-    .menu-middle {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 20px;
-        gap: 20px;
-        position: absolute;
-        top: 100%; 
-        left: 0;
-        background-color: white; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        z-index: 1000; 
-        padding: 20px 0; 
-      }
-  
-    .menu-middle.active {
-      display: flex;
-    }
-  
-    .menu-right {
-      width: 100%;
-      justify-content: flex-end;
-      gap: 20px;
-    }
-  
-
-    .dropdown {
-        position: static;
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-        width: 100%;
-        box-shadow: none;
-        transform: none;
-        padding: 10px 0;
-      }
-  
-    .dropdown-container:hover .dropdown {
-      visibility: visible;
-    }
-  
-    .vl {
-      display: none;
-    }
-  
-    .arrow {
-      display: none;
-    }
-  }
   
 
 /* -------------- First Viewport -------------- */
@@ -596,7 +521,7 @@ position: relative;
 
 .bgc-change {
 background-color:  rgb(63, 83, 44);
-width: calc(100vw);
+width: calc(100vw - 15px);
 height: 300px;
 position: absolute;
 bottom: 0;
@@ -698,7 +623,7 @@ z-index: -20;
     align-items: center;
     font-weight: 100;
     padding: 20px;
-    width: 1692px;
+    width: calc(100vw - 15px);
     background-color:  rgb(63, 83, 44);
     color: white;
 }
@@ -717,9 +642,240 @@ hr {
 margin: 0;
 }
 
-/* -------------- Mobile Adjustments -------------- */
+/* -------------- Tablet Adjustments -------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
 
-@media (max-width: 768px) {
+    .menu {
+        align-items: center;
+        padding: 5px;
+    }
+  
+    .menu-left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .menu-left img {
+        width: 100%;
+      }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .menu-middle {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: white; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+        padding: 20px 0; 
+      }
+  
+    .menu-middle.active {
+      display: flex;
+    }
+  
+    .menu-right {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  
+
+    .dropdown {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+        transform: none;
+        padding: 10px 0;
+      }
+  
+    .dropdown-container:hover .dropdown {
+      visibility: visible;
+    }
+  
+    .vl {
+      display: none;
+    }
+  
+    .arrow {
+      display: none;
+    }
+
+.first-vp-container {
+flex-direction: column;
+padding: 5% 0;
+gap: 30px;
+}
+
+.text-content {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.first-vp-container video {
+width: 100%;
+height: auto;
+    }
+
+.matn {
+font-size: 16px;
+line-height: 1.4;
+max-width: 90%;
+text-align: center;
+    }
+
+.titr {
+font-size: 25px;
+max-width: 70%;
+text-align: center;
+    }
+
+    .content-button {
+width: 50%;
+font-size: 16px;
+padding: 12px;
+    }
+
+.second-vp-description {
+font-size: 16px;
+margin: 20px;
+}
+
+.second-vp-text {
+padding: 20px;
+font-size: 18px;
+max-width: 300px;
+}
+
+.third-vp-container, .fourth-vp-container {
+    display: block;
+    padding: 20px;
+}
+
+.vp-texts {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vp-title, .vp-description, .vp-content {
+    max-width: max-content;
+}
+
+.third-vp-container video {
+    width: 100%;
+    padding: 0;
+}
+
+.fourth-vp-container video {
+width: 100%;
+padding: 0;
+}
+
+.fifth-vp-container {
+    width: 80%;
+}
+ .fifth-vp-description {
+    font-size: 12px;
+    max-width: 85%;
+ }
+
+.fifth-vp-title {
+font-size: 20px;
+}
+
+.bgc-change {
+    width: 100vw;
+}
+}
+
+  /* -------------- Mobile Adjustments -------------- */
+  @media (max-width: 768px) {
+    .menu {
+        align-items: center;
+        padding: 5px;
+    }
+  
+    .menu-left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .menu-left img {
+        width: 100%;
+      }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .menu-middle {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: white; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+        padding: 20px 0; 
+      }
+  
+    .menu-middle.active {
+      display: flex;
+    }
+  
+    .menu-right {
+      width: 100%;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+  
+
+    .dropdown {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+        transform: none;
+        padding: 10px 0;
+      }
+  
+    .dropdown-container:hover .dropdown {
+      visibility: visible;
+    }
+  
+    .vl {
+      display: none;
+    }
+  
+    .arrow {
+      display: none;
+    }
 
     .menu-right {
         font-size: small;
@@ -810,5 +966,29 @@ padding: 0;
 font-size: 20px;
 }
 
+.bgc-change {
+    width: 100vw;
 }
 
+.below-fifth-vp-text {
+    font-size: 16px;
+}
+
+.sixth-vp-pictures-and-texts, .percentages-container {
+    flex-wrap: wrap;
+    gap:  0;
+}
+
+.percent-title, .seven-vp-title {
+    margin: 0;
+}
+.seven-vp-description {
+    margin-top: 0;
+}
+
+.footer {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+}
