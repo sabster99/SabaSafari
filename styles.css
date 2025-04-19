@@ -115,12 +115,23 @@ position: relative;
 .dropdown a {
     font-size: 16px;
     font-weight: 100;
-    display: block;
 }
 
 .links-middle-menu {
     font-size: 16px;
     color: rgb(95, 94, 94);
+
+}
+
+.second-link-middle-menu {
+    font-size: 16px;
+    color: rgb(95, 94, 94);
+    padding: 5%;
+}
+
+.second-link-content-middle-menu a {
+    display: flex;
+    flex-direction: column;
 }
 
 .first-link-middle-menu {
@@ -128,7 +139,6 @@ position: relative;
     color: rgb(95, 94, 94);
     display: flex;
     position: relative;
-    flex-direction: row;
     justify-content: space-between;
     padding: 5%;
 }
@@ -221,28 +231,6 @@ position: relative;
     flex-direction: row;
     width:50%;
     height: auto ;
-}
-
-.matn {
-flex-direction: column;
-font-size: 20px;
-line-height: 1.25;
-max-width: 80%;
-}
-
-text-content {
-justify-content: left;
-display: flex;
-}
-    
-.titr {
-flex-direction: column;
-margin: 0;
-padding: 0;
-line-height: 1;
-font-size: 50px;
-text-align: left;
-max-width: 70%;
 }
     
 .content-button {
