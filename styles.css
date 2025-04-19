@@ -325,7 +325,6 @@ font-size: 16px;
     cursor: pointer;
     font-size: 15px;
     padding: 12px;
-    max-width: 130px;
 }
 
 .third-vp-container video {
@@ -360,7 +359,6 @@ font-size: 16px;
     cursor: pointer;
     font-size: 15px;
     padding: 12px;
-    width: 150px;
 }
 
 /* -------------- Fifth Viewport -------------- */
@@ -986,6 +984,14 @@ font-size: 20px;
     margin-top: 0;
 }
 
+.Eighth-vp-title {
+    font-size: 25px;
+}
+
+.Eighth-vp-description {
+font-size: 16px;
+}
+
 .footer {
     flex-wrap: wrap;
     gap: 30px;
@@ -993,6 +999,12 @@ font-size: 20px;
 
 .footer-end {
     width: calc(100vw);
+    flex-wrap: wrap;
+}
 
+.footer-end-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
 }
   }
